@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheikh Saniya Parveen | Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            scroll-behavior: smooth;
+        }
+
+        header { 
+            position: relative; 
+            height: 100vh; 
+            background: url('./Images/galgotias-university.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        header .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        header .content img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #61dafb;
+        }
+
+        header h1 {
+            margin: 20px 0 10px;
+            font-size: 2.5em;
+            color: #fcb69f;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        header .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #fcb69f;
+            color: #121212;
+            font-size: 1em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        header .btn:hover {
+            background: #ffecd2;
+            color: #121212;
+        }
+
+        nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        nav .logo {
+            font-size: 1.5em;
+            color: #fcb69f;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #fcb69f;
+        }
+
+        section {
+            padding: 50px;
+            background: white;
+            margin: 20px auto;
+            width: 90%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .skills, .projects, .internships {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill, .project, .internship {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: calc(33% - 40px);
+        }
+
+        @media (max-width: 768px) {
+            .skill, .project, .internship {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .skill, .project, .internship {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Sheikh Saniya Parveen</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#internships">Internships</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <img src="./Images/Saniya.jpg" alt="Sheikh Saniya">
+            <h1>Sheikh Saniya Parveen</h1>
+            <p>Undergraduate Student @ CSE Department, Galgotias University</p>
+            <a href="#about" class="btn">Enter Portfolio</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About </h2>
+        <p>Passionate about programming and creating software solutions that tackle real-world problems. Dedicated to applying these skills in professional endeavors. Interests include Software Development, Machine Learning, and exploring the power of Natural Language Processing. Experienced in working on Robotics projects, specifically focusing on Autonomous Ground Vehicles. When not immersed in problem-solving, time is often spent reading novels or enjoying favorite music tracks, ensuring a balanced and inspired mindset.</p>
+        <p>GitHub: <a href="https://github.com/SaniyaParveenCode" target="_blank">github.com/SaniyaParveenCode</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/sheikh-saniya-parveen" target="_blank">linkedin.com/in/sheikh-saniya-parveen</a></p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>Python</h3>
+                <p>Worked in Python programming for solving complex problems.</p>
+            </div>
+            <div class="skill">
+                <h3>C++</h3>
+                <p>Skilled in C++ for system programming and algorithmic challenges.</p>
+            </div>
+            <div class="skill">
+                <h3>SQL</h3>
+                <p>Proficient in SQL for database management and optimization.</p>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Work on project using JavaScript for web development and interactivity.</p>
+            </div>
+            <div class="skill">
+                <h3>Flutter</h3>
+                <p> Build cross-platform mobile applications Sortify using Flutter.</p>
+            </div>
+            <div class="skill">
+                <h3>HTML & CSS</h3>
+                <p>Designed and developed Portfolio using HTML and CSS.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Sortify</h3>
+                <p>A project to sort various types of data structures in an optimized way. Developed using C++.</p>
+            </div>
+            <div class="project">
+                <h3>Expense Tracker</h3>
+                <p>An application built using Flutter to track expenses and manage budgets.</p>
+            </div>
+            <div class="project">
+                <h3>Portfolio</h3>
+                <p>This portfolio is built using HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="internships">
+        <h2>Internships</h2>
+        <div class="internships">
+            <div class="internship">
+                <h3>Walmart USA</h3>
+                <p>Contributed to system optimization and security enhancements during my virtual internship with Walmart USA.</p>
+            </div>
+            <div class="internship">
+                <h3>Goldman Sachs</h3>
+                <p>Worked on improving system performance and enhancing security measures during my internship at Goldman Sachs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:saniyayusuf433@gmail.com">saniyayusuf433@gmail.com</a></p>
+        <p>Phone: <a href="tel:+919906707034">+91 7906707034</a></p>
+    </section>
+</body>
+</html>
