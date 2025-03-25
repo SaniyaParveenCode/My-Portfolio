@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheikh Saniya Parveen | Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            scroll-behavior: smooth;
+        }
+
+        header { position: relative; height: 100vh; background: url('galgotias-university.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        header .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        header .content img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #61dafb;
+        }
+
+        header h1 {
+            margin: 20px 0 10px;
+            font-size: 2.5em;
+            color: #fcb69f;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        header .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #fcb69f;
+            color: #121212;
+            font-size: 1em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        header .btn:hover {
+            background: #ffecd2;
+            color: #121212;
+        }
+
+        nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        nav .logo {
+            font-size: 1.5em;
+            color: #fcb69f;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #fcb69f;
+        }
+
+        section {
+            padding: 50px;
+            background: white;
+            margin: 20px auto;
+            width: 90%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .skills, .projects, .internships {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill, .project, .internship {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: calc(33% - 40px);
+        }
+
+        @media (max-width: 768px) {
+            .skill, .project, .internship {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .skill, .project, .internship {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Sheikh Saniya</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#internships">Internships</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <img src="Saniya.jpg" alt="Sheikh Saniya">
+            <h1>Sheikh Saniya Parveen</h1>
+            <p>Undergraduate Student @ CSE Department, Galgotias University</p>
+            <a href="#about" class="btn">Enter Portfolio</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Passionate about programming and creating software solutions that tackle real-world problems. Dedicated to applying these skills in professional endeavors. Interests include Software Development, Machine Learning, and exploring the power of Natural Language Processing. Experienced in working on Robotics projects, specifically focusing on Autonomous Ground Vehicles. When not immersed in problem-solving, time is often spent reading novels or enjoying favorite music tracks, ensuring a balanced and inspired mindset.</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/SaniyaParveenCode" target="_blank">github.com/SaniyaParveenCode</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sheikh-saniya-parveen-828678259/" target="_blank">linkedin.com/in/sheikh-saniya-parveen</a></p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>Flutter</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Hugging Face</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Sortify</h3>
+                <p>A sorting algorithm visualizer to demonstrate various sorting techniques interactively. Tools used: JavaScript, HTML, CSS. Provides an efficient way to learn sorting algorithms.</p>
+                <a href="https://github.com/SaniyaParveenCode/sortify" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio to showcase skills, projects, and experiences. Tools used: HTML, CSS, JavaScript. Lightweight and responsive design.</p>
+                <a href="https://github.com/SaniyaParveenCode/portfolio" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Expense Tracker</h3>
+                <p>A web application to manage and track daily expenses effectively. Tools used: JavaScript, HTML, CSS. Features include dynamic expense tracking and visual representation of data.</p>
+                <a href="https://github.com/SaniyaParveenCode/expense-tracker" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="internships">
+        <h2>Internships</h2>
+        <div class="internships">
+            <div class="internship">
+                <h3>Walmart USA</h3>
+                <p>Collaborated with engineering teams, impacting 50% of the shipping department's technical operations. Developed a novel heap data structure in Java, improving shipping processing efficiency by 35% and reducing processing time for over 10,000 shipments/week.</p>
+            </div>
+            <div class="internship">
+                <h3>Goldman Sachs</h3>
+                <p>Conducted IT security assessments across 10+ systems, addressing 15+ vulnerabilities and improving security posture. Implemented security enhancements, including a 40% increase in password length, reducing breach risks significantly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><strong>Phone:</strong> 7906707034</p>
+        <p><strong>Email:</strong> <a href="mailto:saniyayusuf433@gmail.com">saniyayusuf433@gmail.com</a></p>
+    </section>
+</body>
+</html>
+header {
+    position: relative;
+    height: 100vh;
+    background: url('galgotias-university.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
